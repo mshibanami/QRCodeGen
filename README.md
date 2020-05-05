@@ -1,10 +1,13 @@
 # QR Code Gen for Safari
 
-Safari extension that generates QR code for the current tab.
+This is a Safari extension that generates QR code for the current tab.
 
-This is a paid app on Mac App Store but you can also download or build it for free if you want.
+You can get this extension from:
 
-Please feel free to send a pull request if you found a bug or a localization issue.
+- [App Store](https://itunes.apple.com/app/id1510250324); or
+- [Releases on Github](https://github.com/mshibanami/QRCodeGen/releases) (free)
+
+Please feel free to send a feedback or a pull request if you found a bug or a localization issue.
 
 ![screenshot](screenshot.png)
 
