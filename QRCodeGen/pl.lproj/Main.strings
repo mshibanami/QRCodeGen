@@ -1,0 +1,41 @@
+/* Class = "NSButtonCell"; title = "About this extension"; ObjectID = "1me-C5-abF"; */
+"1me-C5-abF.title" = "About this extension";
+
+/* Class = "NSMenuItem"; title = "QR Code Gen"; ObjectID = "1Xt-HY-uBw"; */
+"1Xt-HY-uBw.title" = "QR Code Gen";
+
+/* Class = "NSMenuItem"; title = "Quit QR Code Gen"; ObjectID = "4sb-4s-VLi"; */
+"4sb-4s-VLi.title" = "Quit QR Code Gen";
+
+/* Class = "NSMenu"; title = "Main Menu"; ObjectID = "AYu-sK-qS6"; */
+"AYu-sK-qS6.title" = "Main Menu";
+
+/* Class = "NSMenuItem"; title = "Show All"; ObjectID = "Kd2-mp-pUS"; */
+"Kd2-mp-pUS.title" = "Show All";
+
+/* Class = "NSMenuItem"; title = "Hide QR Code Gen"; ObjectID = "Olw-nP-bQN"; */
+"Olw-nP-bQN.title" = "Hide QR Code Gen";
+
+/* Class = "NSTextFieldCell"; title = "App Name"; ObjectID = "S7v-7o-3vW"; */
+"S7v-7o-3vW.title" = "App Name";
+
+/* Class = "NSButtonCell"; alternateTitle = "Install"; ObjectID = "Srx-0j-A4D"; */
+"Srx-0j-A4D.alternateTitle" = "Install";
+
+/* Class = "NSButtonCell"; title = "Open in Safari Extensions Preferences…"; ObjectID = "Srx-0j-A4D"; */
+"Srx-0j-A4D.title" = "Open in Safari Extensions Preferences…";
+
+/* Class = "NSMenu"; title = "QR Code Gen"; ObjectID = "uQy-DD-JDr"; */
+"uQy-DD-JDr.title" = "QR Code Gen";
+
+/* Class = "NSMenuItem"; title = "Hide Others"; ObjectID = "Vdr-fp-XzO"; */
+"Vdr-fp-XzO.title" = "Hide Others";
+
+/* Class = "NSMenuItem"; title = "Close"; ObjectID = "Aeg-ak-XDi"; */
+"Aeg-ak-XDi.title" = "Close";
+
+/* Class = "NSMenu"; title = "Window"; ObjectID = "JhG-tq-j7Q"; */
+"JhG-tq-j7Q.title" = "Window";
+
+/* Class = "NSMenuItem"; title = "Window"; ObjectID = "TQx-kt-4cf"; */
+"TQx-kt-4cf.title" = "Window";
