@@ -20,6 +20,13 @@
 		00246159245445F000C7DFE6 /* SafariExtensionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00246158245445F000C7DFE6 /* SafariExtensionViewController.swift */; };
 		00246161245445F000C7DFE6 /* ToolbarItemIcon.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 00246160245445F000C7DFE6 /* ToolbarItemIcon.pdf */; };
 		002461732455BD9E00C7DFE6 /* MacEditorTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 002461722455BD9E00C7DFE6 /* MacEditorTextView.swift */; };
+		0028AAE024D02CF400B33543 /* NSView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0028AADF24D02CF400B33543 /* NSView+Extensions.swift */; };
+		0028AAE224D02DF500B33543 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0028AAE124D02DF500B33543 /* Colors.swift */; };
+		0028AAE424D02E0800B33543 /* Consts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0028AAE324D02E0800B33543 /* Consts.swift */; };
+		0028AAE624D02E7E00B33543 /* FeedbackMenuPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0028AAE524D02E7E00B33543 /* FeedbackMenuPresenter.swift */; };
+		0028AAEA24D02EE600B33543 /* AppFeedbackService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0028AAE924D02EE600B33543 /* AppFeedbackService.swift */; };
+		0028AAEC24D02F5100B33543 /* URLQueryParameter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0028AAEB24D02F5100B33543 /* URLQueryParameter.swift */; };
+		0028AAEE24D0301300B33543 /* Collection+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0028AAED24D0301300B33543 /* Collection+Extensions.swift */; };
 		00637D87245D27F7003C1163 /* SafariExtensionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00637D86245D27F7003C1163 /* SafariExtensionView.swift */; };
 		00AE5D662455FB6400D4E617 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 00AE5D652455FB6400D4E617 /* Assets.xcassets */; };
 		00AE5D68245601A000D4E617 /* SafariExtensionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00AE5D67245601A000D4E617 /* SafariExtensionViewModel.swift */; };
@@ -89,6 +96,13 @@
 		00246160245445F000C7DFE6 /* ToolbarItemIcon.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = ToolbarItemIcon.pdf; sourceTree = "<group>"; };
 		00246162245445F000C7DFE6 /* QRCodeGen_Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = QRCodeGen_Extension.entitlements; sourceTree = "<group>"; };
 		002461722455BD9E00C7DFE6 /* MacEditorTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MacEditorTextView.swift; sourceTree = "<group>"; };
+		0028AADF24D02CF400B33543 /* NSView+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSView+Extensions.swift"; sourceTree = "<group>"; };
+		0028AAE124D02DF500B33543 /* Colors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		0028AAE324D02E0800B33543 /* Consts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Consts.swift; sourceTree = "<group>"; };
+		0028AAE524D02E7E00B33543 /* FeedbackMenuPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedbackMenuPresenter.swift; sourceTree = "<group>"; };
+		0028AAE924D02EE600B33543 /* AppFeedbackService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppFeedbackService.swift; sourceTree = "<group>"; };
+		0028AAEB24D02F5100B33543 /* URLQueryParameter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URLQueryParameter.swift; sourceTree = "<group>"; };
+		0028AAED24D0301300B33543 /* Collection+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Collection+Extensions.swift"; sourceTree = "<group>"; };
 		00637D86245D27F7003C1163 /* SafariExtensionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariExtensionView.swift; sourceTree = "<group>"; };
 		009B307F245A4977004CC051 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Localizable.strings; sourceTree = "<group>"; };
 		009B3080245A4994004CC051 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Localizable.strings; sourceTree = "<group>"; };
@@ -179,14 +193,21 @@
 		00246127245445ED00C7DFE6 /* QRCodeGen */ = {
 			isa = PBXGroup;
 			children = (
-				00AE5D73245612F900D4E617 /* Localizable.strings */,
 				00246128245445ED00C7DFE6 /* QRCodeGen.entitlements */,
-				00AE5D692456108400D4E617 /* L10n.swift */,
-				0024612A245445ED00C7DFE6 /* AppDelegate.swift */,
-				0024612C245445ED00C7DFE6 /* Main.storyboard */,
-				0024612F245445ED00C7DFE6 /* ViewController.swift */,
-				00246131245445EF00C7DFE6 /* Assets.xcassets */,
 				00246133245445EF00C7DFE6 /* Info.plist */,
+				0024612A245445ED00C7DFE6 /* AppDelegate.swift */,
+				0028AAE124D02DF500B33543 /* Colors.swift */,
+				00AE5D692456108400D4E617 /* L10n.swift */,
+				0028AAED24D0301300B33543 /* Collection+Extensions.swift */,
+				0028AAEB24D02F5100B33543 /* URLQueryParameter.swift */,
+				0028AAE324D02E0800B33543 /* Consts.swift */,
+				0028AAE524D02E7E00B33543 /* FeedbackMenuPresenter.swift */,
+				0028AADF24D02CF400B33543 /* NSView+Extensions.swift */,
+				0024612F245445ED00C7DFE6 /* ViewController.swift */,
+				0028AAE924D02EE600B33543 /* AppFeedbackService.swift */,
+				00246131245445EF00C7DFE6 /* Assets.xcassets */,
+				00AE5D73245612F900D4E617 /* Localizable.strings */,
+				0024612C245445ED00C7DFE6 /* Main.storyboard */,
 			);
 			path = QRCodeGen;
 			sourceTree = "<group>";
@@ -418,8 +439,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				00246130245445ED00C7DFE6 /* ViewController.swift in Sources */,
+				0028AAE424D02E0800B33543 /* Consts.swift in Sources */,
+				0028AAEA24D02EE600B33543 /* AppFeedbackService.swift in Sources */,
+				0028AAE624D02E7E00B33543 /* FeedbackMenuPresenter.swift in Sources */,
+				0028AAE224D02DF500B33543 /* Colors.swift in Sources */,
+				0028AAE024D02CF400B33543 /* NSView+Extensions.swift in Sources */,
 				0024612B245445ED00C7DFE6 /* AppDelegate.swift in Sources */,
+				0028AAEC24D02F5100B33543 /* URLQueryParameter.swift in Sources */,
 				00AE5D6B245611A700D4E617 /* L10n.swift in Sources */,
+				0028AAEE24D0301300B33543 /* Collection+Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
