@@ -19,28 +19,45 @@ struct SafariExtensionView: View {
     }
 
     func makeContentView() -> some View {
+        let image = { () -> NSImage in
+            guard let filter = CIFilter(name: "CIQRCodeGenerator") else {
+                NSLog("Failed initializing the filter with CIQRCodeGenerator.")
+                return NSImage()
+            }
+            filter.setValue(viewModel.urlString.data(using: .utf8), forKey: "inputMessage")
+            guard let ciImage = filter.outputImage?.transformed(by: CGAffineTransform(scaleX: 10, y: 10)) else {
+                NSLog("Failed setting 'inputMessage' for the filter.")
+                return NSImage()
+            }
+            return NSImage(ciImage: ciImage)
+        }()
+        
         return VStack(alignment: .center) {
             Spacer()
-            Image(nsImage: { () -> NSImage in
-                guard let filter = CIFilter(name: "CIQRCodeGenerator") else {
-                    NSLog("Failed initializing the filter with CIQRCodeGenerator.")
-                    return NSImage()
-                }
-                filter.setValue(viewModel.urlString.data(using: .utf8), forKey: "inputMessage")
-                guard let ciImage = filter.outputImage?.transformed(by: CGAffineTransform(scaleX: 10, y: 10)) else {
-                    NSLog("Failed setting 'inputMessage' for the filter.")
-                    return NSImage()
-                }
-                return NSImage(ciImage: ciImage)
-            }())
+            Image(nsImage: image)
                 .resizable()
                 .aspectRatio(contentMode: .fit)
+                .contextMenu(menuItems: {
+                    Button(action: {
+                        NSPasteboard.general.clearContents()
+                        NSPasteboard.general.writeObjects([image])
+                    }) {
+                        Text(L10n.copyThisImage)
+                    }
+                })
+                .onDrag({
+                    let data = image.tiffRepresentation
+                    let provider = NSItemProvider(
+                        item: data as NSSecureCoding?,
+                        typeIdentifier: kUTTypeTIFF as String)
+                    return provider
+                })
             Text(viewModel.pageTitle)
                 .truncationMode(.tail)
                 .layoutPriority(1)
                 .lineLimit(1)
                 .padding(EdgeInsets(top: 3, leading: 5, bottom: 0, trailing: 5))
-            MacEditorTextView(text: $viewModel.urlString, font: .systemFont(ofSize: 14), isEditable: true)
+            MacEditorTextView(text: $viewModel.urlString, font: .systemFont(ofSize: 14), isEditable: false)
                 .frame(height: 60)
             Spacer()
         }

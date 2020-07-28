@@ -29,4 +29,6 @@ class L10n {
     static let openSafariPreferences = NSLocalizedString("Open Safari Preferences…", comment: "")
     static let sendFeedback = NSLocalizedString("Send Feedback…", comment: "")
     static let aboutThisExtension = NSLocalizedString("About this extension", comment: "")
+    
+    static let copyThisImage = NSLocalizedString("Copy this image", comment: "")
 }
