@@ -18,7 +18,6 @@
 		00246154245445F000C7DFE6 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00246153245445F000C7DFE6 /* Cocoa.framework */; };
 		00246157245445F000C7DFE6 /* SafariExtensionHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00246156245445F000C7DFE6 /* SafariExtensionHandler.swift */; };
 		00246159245445F000C7DFE6 /* SafariExtensionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00246158245445F000C7DFE6 /* SafariExtensionViewController.swift */; };
-		0024615F245445F000C7DFE6 /* script.js in Resources */ = {isa = PBXBuildFile; fileRef = 0024615E245445F000C7DFE6 /* script.js */; };
 		00246161245445F000C7DFE6 /* ToolbarItemIcon.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 00246160245445F000C7DFE6 /* ToolbarItemIcon.pdf */; };
 		002461732455BD9E00C7DFE6 /* MacEditorTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 002461722455BD9E00C7DFE6 /* MacEditorTextView.swift */; };
 		00637D87245D27F7003C1163 /* SafariExtensionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00637D86245D27F7003C1163 /* SafariExtensionView.swift */; };
@@ -87,7 +86,6 @@
 		00246156245445F000C7DFE6 /* SafariExtensionHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariExtensionHandler.swift; sourceTree = "<group>"; };
 		00246158245445F000C7DFE6 /* SafariExtensionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariExtensionViewController.swift; sourceTree = "<group>"; };
 		0024615D245445F000C7DFE6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		0024615E245445F000C7DFE6 /* script.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = script.js; sourceTree = "<group>"; };
 		00246160245445F000C7DFE6 /* ToolbarItemIcon.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = ToolbarItemIcon.pdf; sourceTree = "<group>"; };
 		00246162245445F000C7DFE6 /* QRCodeGen_Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = QRCodeGen_Extension.entitlements; sourceTree = "<group>"; };
 		002461722455BD9E00C7DFE6 /* MacEditorTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MacEditorTextView.swift; sourceTree = "<group>"; };
@@ -228,7 +226,6 @@
 				00637D86245D27F7003C1163 /* SafariExtensionView.swift */,
 				00AE5D67245601A000D4E617 /* SafariExtensionViewModel.swift */,
 				0024615D245445F000C7DFE6 /* Info.plist */,
-				0024615E245445F000C7DFE6 /* script.js */,
 				00246160245445F000C7DFE6 /* ToolbarItemIcon.pdf */,
 				00246162245445F000C7DFE6 /* QRCodeGen_Extension.entitlements */,
 				00AE5D652455FB6400D4E617 /* Assets.xcassets */,
@@ -410,7 +407,6 @@
 				00246161245445F000C7DFE6 /* ToolbarItemIcon.pdf in Resources */,
 				00AE5D71245612F900D4E617 /* Localizable.strings in Resources */,
 				00AE5D662455FB6400D4E617 /* Assets.xcassets in Resources */,
-				0024615F245445F000C7DFE6 /* script.js in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
